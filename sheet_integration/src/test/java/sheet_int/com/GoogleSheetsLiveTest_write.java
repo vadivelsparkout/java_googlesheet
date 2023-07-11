@@ -136,7 +136,38 @@ public class GoogleSheetsLiveTest_write {
 	    	    // Use 'result' to access information about the created spreadsheet if needed
 	    	    System.out.println("Spreadsheet created. ID: " + result.getSpreadsheetId());
 	  }
-	  
+	  @Test(priority=6)
+	public void new_sheet() {
+		 try {
+	            // Define properties of the new sheet
+	            SheetProperties newSheetProperties = new SheetProperties()
+	                    .setTitle("Second Sheet");
+
+	            // Create the new sheet
+	            Sheet newSheet = new Sheet().setProperties(newSheetProperties);
+
+	            // Retrieve the existing sheets of the spreadsheet
+	            Spreadsheet spreadsheet = sheetsService.spreadsheets().get(SPREADSHEET_ID).execute();
+	            List<Sheet> existingSheets = spreadsheet.getSheets();
+
+	            // Add the new sheet to the list of existing sheets
+	            List<Request> requests = new ArrayList<>();
+	            requests.add(new Request()
+	                    .setAddSheet(new AddSheetRequest()
+	                            .setProperties(newSheetProperties)));
+
+	            // Update the spreadsheet with the new sheet
+	            BatchUpdateSpreadsheetRequest batchUpdateRequest = new BatchUpdateSpreadsheetRequest()
+	                    .setRequests(requests);
+
+	            sheetsService.spreadsheets().batchUpdate(SPREADSHEET_ID, batchUpdateRequest).execute();
+
+	            System.out.println("Second sheet created successfully.");
+	        } catch (Exception e) {
+	            e.printStackTrace();
+	        }
+	    }
+	}
 	  
   }
  
