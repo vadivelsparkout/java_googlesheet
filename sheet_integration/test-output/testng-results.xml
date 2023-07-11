@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-11T13:04:51 IST" name="Default suite" finished-at="2023-07-11T13:04:57 IST" duration-ms="6010">
+    <groups>
+    </groups>
+    <test started-at="2023-07-11T13:04:51 IST" name="Default test" finished-at="2023-07-11T13:04:57 IST" duration-ms="6010">
+      <class name="sheet_int.com.GoogleSheetsLiveTest_write">
+        <test-method is-config="true" signature="setup()[pri:0, instance:sheet_int.com.GoogleSheetsLiveTest_write@13e344d]" started-at="2023-07-11T13:04:51 IST" name="setup" finished-at="2023-07-11T13:04:52 IST" duration-ms="843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="whenWriteSheet_thenReadSheetOk()[pri:1, instance:sheet_int.com.GoogleSheetsLiveTest_write@13e344d]" started-at="2023-07-11T13:04:52 IST" name="whenWriteSheet_thenReadSheetOk" finished-at="2023-07-11T13:04:54 IST" duration-ms="1769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenWriteSheet_thenReadSheetOk -->
+        <test-method signature="multirange()[pri:2, instance:sheet_int.com.GoogleSheetsLiveTest_write@13e344d]" started-at="2023-07-11T13:04:54 IST" name="multirange" finished-at="2023-07-11T13:04:55 IST" duration-ms="785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multirange -->
+        <test-method signature="appending_method()[pri:3, instance:sheet_int.com.GoogleSheetsLiveTest_write@13e344d]" started-at="2023-07-11T13:04:55 IST" name="appending_method" finished-at="2023-07-11T13:04:55 IST" duration-ms="587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appending_method -->
+        <test-method signature="read_value_from_sheet()[pri:4, instance:sheet_int.com.GoogleSheetsLiveTest_write@13e344d]" started-at="2023-07-11T13:04:55 IST" name="read_value_from_sheet" finished-at="2023-07-11T13:04:56 IST" duration-ms="443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- read_value_from_sheet -->
+        <test-method signature="create_sheet()[pri:5, instance:sheet_int.com.GoogleSheetsLiveTest_write@13e344d]" started-at="2023-07-11T13:04:56 IST" name="create_sheet" finished-at="2023-07-11T13:04:57 IST" duration-ms="1431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_sheet -->
+      </class> <!-- sheet_int.com.GoogleSheetsLiveTest_write -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,68 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>sheet_integration</groupId>
+  <artifactId>sheet_integration</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <repositories>
+	<repository>
+		<id>AsposeJavaAPI</id>
+		<name>Aspose Java API</name>
+		<url>http://repository.aspose.com/repo/</url>
+	</repository>
+</repositories>
+  
+  <dependencies>
+	  <dependency>
+    <groupId>org.assertj</groupId>
+    <artifactId>assertj-core</artifactId>
+    <version>3.21.0</version>
+    <scope>test</scope>
+</dependency>
+	  <dependency>
+		<groupId>com.aspose</groupId>
+		<artifactId>aspose-cells</artifactId>
+		<version>22.2</version>
+	</dependency>
+  <!-- https://mvnrepository.com/artifact/com.google.api-client/google-api-client -->
+<dependency>
+<groupId>com.google.api-client</groupId>
+<artifactId>google-api-client</artifactId>
+<version>1.22.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client-jetty -->
+<dependency>
+<groupId>com.google.oauth-client</groupId>
+<artifactId>google-oauth-client-jetty</artifactId><version>1.22.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.google.apis/google-api-services-sheets -->
+<dependency>
+<groupId>com.google.apis</groupId>
+<artifactId>google-api-services-sheets</artifactId>
+<version>v4-rev456-1.22.0</version>
+
+</dependency>
+ <dependency>
+	<groupId>org.seleniumhq.selenium</groupId>
+	<artifactId>selenium-http-jdk-client</artifactId>
+	<version>4.5.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.9.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.7.1</version>
+    <scope>test</scope>
+</dependency>
+  	<dependency>
+  		<groupId>linkd</groupId>
+  		<artifactId>linkd</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
+</project>
